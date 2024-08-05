@@ -1,0 +1,149 @@
+<!--<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón Avanzado en HTML y CSS</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #101820;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .boton-avanzado {
+            background: linear-gradient(145deg, #f75c03, #fbc531);
+            border: 2px solid transparent;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.3);
+            transition: all 0.4s ease;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .boton-avanzado::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.6s ease;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .boton-avanzado:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .boton-avanzado:hover {
+            background: linear-gradient(145deg, #fbc531, #f75c03);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 255, 255, 0.4);
+            transform: translateY(-4px);
+        }
+
+        .boton-avanzado:active {
+            background: linear-gradient(145deg, #f75c03, #fbc531);
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+    <button class="boton-avanzado">Haz clic aquí</button>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Principal y Fotos Adicionales</title>
+    <style>
+        /* Estilos para el contenedor de la imagen principal y las fotos adicionales */
+        .contenedor-imagen {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 12px; /* Ajusta el radio para bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para la imagen principal */
+        .imagen-principal {
+            display: block;
+            width: 170px; /* Tamaño ajustado */
+            height: 310px; /* Tamaño ajustado */
+            object-fit: cover; /* Mantiene la proporción y cubre el área */
+            transition: opacity 0.3s ease-in-out; /* Transición suave para la opacidad */
+        }
+
+        /* Estilos para las fotos adicionales */
+        .fotos-adicionales {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 10px; /* Espacio entre las fotos adicionales */
+            opacity: 0; /* Inicialmente oculto */
+            transition: opacity 0.3s ease-in-out; /* Transición suave para la opacidad */
+        }
+
+        .fotos-adicionales img {
+            width: 100px; /* Tamaño de cada foto adicional */
+            height: 170px; /* Ajusta el tamaño de las fotos adicionales */
+            object-fit: cover; /* Mantiene la proporción y cubre el área */
+            transition: transform 0.3s ease-in-out; /* Transición suave para el escalado */
+        }
+
+        /* Efecto al pasar el ratón sobre el contenedor */
+        .contenedor-imagen:hover .imagen-principal {
+            opacity: 0; /* Oculta la imagen principal al pasar el ratón */
+        }
+
+        .contenedor-imagen:hover .fotos-adicionales {
+            opacity: 1; /* Muestra las fotos adicionales al pasar el ratón */
+            flex-direction: row; /* Organiza las fotos en una fila horizontal */
+            align-items: center; /* Alinea las fotos verticalmente en el centro */
+            justify-content: center; /* Centra las fotos horizontalmente */
+        }
+
+        .contenedor-imagen:hover .fotos-adicionales img {
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño de las fotos adicionales al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-imagen">
+        <img src="imagenes/OpcionesTimbre.PNG" alt="Imagen principal" class="imagen-principal">
+        <div class="fotos-adicionales">
+            <img src="imagenes/ResponderTimbre.PNG" alt="Foto adicional 1">
+            <img src="imagenes/ResponderTimbre.PNG" alt="Foto adicional 1">
+            <img src="imagenes/ResponderTimbre.PNG" alt="Foto adicional 1">
+            <img src="imagenes/ResponderTimbre.PNG" alt="Foto adicional 1">
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,659 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("imagenes/Opcion2.jpg");
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Para ocultar el scroll horizontal */
+}
+
+.Inicio {
+    /*background-color: #217ae6b1;
+    background-image: url("imagenes/Opcion2.jpg");*/
+    padding: 05px 0;
+}
+
+.DescripcionPro, .HabilidadesLenguaje, .Proyectos{
+    /*background-color: #fb7203;
+    background-image: url("imagenes/Opcion2.jpg");*/
+    padding: 50px 0;
+}
+
+
+.Farmacia{
+    padding: 30px 0;
+}
+
+.Hospital{
+    padding: 50px 0;
+} 
+
+.Hotel{
+    padding: 20px 0;
+} 
+
+.ClienteServidor{
+    padding: 50px 0;
+} 
+
+.SQLJava{
+    padding: 30px 0;
+}
+
+.caja{
+    /*background-color: #0a60ec;*/
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.cajaSistemas{
+    /*background-color: #FF0000;*/
+    /*background-image: url("imagenes/rojo.jpg");*/
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.cajaSistemasSuperficie{
+   
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.cajadiv{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+}
+
+.CajaProyectos{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; /* Distribuye los botones uniformemente */
+    align-items: center; /* Centra los botones verticalmente */
+    padding: 20px;
+}
+
+.cajaseparaciontexto {
+    display: flex;
+    width: 1300px;
+    padding-left: 20px;
+}
+
+.cajaseparaciontexto2 {
+    display: flex;
+    width: 1300px;
+    padding-left: 1px;
+}
+
+.cajaseparaciontextocentrada {
+    display: flex;
+    width: 1300px;
+    padding-left: 480px;
+}
+
+.seccion {
+    padding: 30px;
+    width: 450px;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding:40px;
+    bottom: 0;
+}
+
+
+/*Nuevas  Incorporaciones*/
+
+.Datos{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin:20px;
+}
+
+.Vinculo{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin:20px;
+}
+
+.PortaT{
+    color: #FFFFFF;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px 0;
+}
+
+.subtema{
+    color: #FFFFFF;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+
+.TituloProye{
+    color: #FFFFFF;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px 0;
+}
+
+.texto_descriptivo{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+.listanumeros{
+    list-style-type: decimal; /* Estilo numérico */
+    padding: 20px;
+    padding-left: 80px;
+    margin: 0;
+}
+
+.itemsOpAjuste{
+    padding: 10px;
+    margin: 0;
+}
+
+.ulinterlineado{
+    padding: 10px;
+}
+.textoparrafo{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+    padding-left: 45px;
+}
+
+.Descripcion{
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;  
+}
+
+.Habilidades, .Lenguajes, .Cursos{
+    width: 50%;
+    padding: 10px;
+}
+/*.Habilidades{
+    background-color: #FFFFFF;
+    background-image: url("imagenes/Fondo\ Gif.gif");
+}
+
+.Lenguajes{
+    background-color: #FFFFFF;
+    background-image: url("imagenes/Fondo\ Gif.gif");
+}
+
+.Cursos{
+    background-color: #FFFFFF;
+    background-image: url("imagenes/Fondo\ Gif.gif");
+}*/
+
+.items{
+    color: #FFFFFF;
+    line-height: 2.0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.items:before{
+    content:"★"
+}
+
+.itemsOp{
+    color: #FFFFFF;
+    line-height: 2.0;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 50px;
+    margin: 0;
+}
+
+.itemsOp:before{
+    content:"★"
+}
+
+.THabiliLengua{
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 2.0;
+    font-size: 20px;
+} 
+
+.SubTProyec{
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 2.0;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.btn-icon {
+    background-color: transparent; /* Sin color de fondo */
+    border: none; /* Sin borde */
+    padding: 0; /* Sin padding */
+    cursor: pointer; /* Cursor de puntero */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Transición para el efecto hover */
+}
+
+.btn-icon .icono {
+    width: 85px; /* Ajusta el tamaño del icono */
+    height: 85px; /* Ajusta el tamaño del icono */
+}
+
+.btn-icon:hover {
+    transform: scale(1.1); /* Efecto de agrandar al pasar el mouse */
+}
+
+.btn_html {
+    background-color: transparent; /* Sin color de fondo */
+    border: none; /* Sin borde */
+    padding: 0; /* Sin padding */
+    cursor: pointer; /* Cursor de puntero */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Transición para el efecto hover */
+    text-align: center;
+}
+
+.btn_html .icono {
+    width: 180px; /* Ajusta el tamaño del icono */
+    height: 70px; /* Ajusta el tamaño del icono */
+}
+
+.btn_html:hover {
+    transform: scale(1.1); /* Efecto de agrandar al pasar el mouse */
+}
+
+.perfil {
+    margin-top: 55px;
+    width: 150px; /* Tamaño ajustado */
+    height: 150px; /* Tamaño ajustado */
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(255, 193, 7, 0.2));
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    background-image: radial-gradient(circle, rgba(0, 123, 255, 0.4) 20%, rgba(255, 193, 7, 0.4) 60%);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.perfil::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background: rgba(0, 123, 255, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.8);
+    z-index: 1;
+}
+
+.perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.5s ease;
+    filter: grayscale(0%) brightness(100%);
+}
+
+.perfil:hover {
+    transform: scale(1.15);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.8);
+}
+
+.perfil:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.perfil:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0%) brightness(110%);
+}
+
+.nombre{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+}
+
+.cajaimagenSis  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre las filas */
+    padding-left: 20px;
+}
+
+.imagenseparacion {
+    display: flex;
+    padding-left: 80px;
+    gap: 110px; /* Espacio entre las imágenes en una fila */
+}
+
+.imagencentrada {
+    display: flex;
+    padding-left: 470px;
+    gap: 110px; /* Espacio entre las imágenes en una fila */
+}
+
+
+.imagendiseño {
+    overflow: hidden;
+    border-radius: 12px; /* Ajusta el radio para bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+}
+
+.imagendiseño:hover {
+    transform: scale(2.5); /* Aumenta ligeramente el tamaño de la imagen al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+    position: relative; /* Necesario para z-index */
+    z-index: 1; /* Asegura que el elemento esté sobre otros elementos */
+}
+
+.imagendimension{
+    display: block;
+    width: 275px;
+    height: 210px; 
+}
+
+.imagendimension2{
+    display: block;
+    width: 275px;
+    height: 180px; 
+}
+
+.imagendimension3{
+    width: 270px;
+    height: 100px; 
+}
+
+.imagendimension4{
+    width: 605px;
+    height: 100px; 
+}
+
+.proceso{
+    text-align: center;
+}
+
+.imagendimensionpeque{  
+    width: 170px;
+    height: 100px; 
+}
+
+.imagenseparacionpeque {
+    display: flex;
+    gap: 110px; /* Espacio entre las imágenes en una fila */
+}
+
+.imagendiseñoReducido {
+    overflow: hidden;
+    border-radius: 12px; /* Ajusta el radio para bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+}
+
+.imagendiseñoReducido:hover {
+    transform: scale(1.3); /* Aumenta ligeramente el tamaño de la imagen al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.info-overlay {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: #fff; /* Texto blanco */
+    padding: 10px;
+    text-align: center;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease-in-out; /* Transición suave para la opacidad */
+}
+
+.imagendiseñoReducido:hover .info-overlay {
+    opacity: 1; /* Mostrar el overlay al pasar el ratón */
+}
+
+/* Diseño del sistema embedido */
+
+.imagendimensionTimbre{
+    display: block;
+    width: 150px;
+    height: 305px; 
+}
+
+.imagendiseñoTimbre {
+    overflow: hidden;
+    border-radius: 12px; /* Ajusta el radio para bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+}
+
+.imagendiseñoTimbre:hover {
+    transform: scale(1.4); /* Aumenta ligeramente el tamaño de la imagen al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+    position: relative; /* Necesario para z-index */
+    z-index: 1; /* Asegura que el elemento esté sobre otros elementos */
+}
+
+.info-overlay {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: #fff; /* Texto blanco */
+    padding: 10px;
+    text-align: center;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease-in-out; /* Transición suave para la opacidad */
+}
+
+.imagendiseñoTimbre:hover .info-overlay {
+    opacity: 1; /* Mostrar el overlay al pasar el ratón */
+}
+
+.imagenseparacionPython {
+    display: flex;
+    padding-left: 80px;
+    gap: 50px; /* Espacio entre las imágenes en una fila */
+}
+
+
+.cajaPythonCapturas{
+    /* background-color: #0a60ec;*/
+    padding: 35px;
+     width: 1200px;
+     position: relative;
+     margin: 0 auto;
+ }
+
+ .cajaPython{
+    /* background-color: #0a60ec;*/
+    padding: 30px;
+     width: 1200px;
+     position: relative;
+     margin: 0 auto;
+     padding-left: 400px;
+ }
+
+ /* Diseño barberia */
+
+ .imagendimensionBarberia{
+    display: block;
+    width: 260px;
+    height: 210px; 
+}
+
+.cajaBarberia{
+    /* background-color: #0a60ec;*/
+    padding: 30px;
+     width: 1200px;
+     position: relative;
+     margin: 0 auto;
+     padding-left: 200px;
+ }
+
+ .imagendiseñoBarberia {
+    overflow: hidden;
+    border-radius: 12px; /* Ajusta el radio para bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+}
+
+.imagendiseñoBarberia:hover {
+    transform: scale(2.5); /* Aumenta ligeramente el tamaño de la imagen al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+    position: relative; /* Necesario para z-index */
+    z-index: 1; /* Asegura que el elemento esté sobre otros elementos */
+}
+
+.info-overlay {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: #fff; /* Texto blanco */
+    padding: 10px;
+    text-align: center;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease-in-out; /* Transición suave para la opacidad */
+}
+
+.imagendiseñoBarberia:hover .info-overlay {
+    opacity: 1; /* Mostrar el overlay al pasar el ratón */
+}
+
+/* Diseño Figuras */ 
+
+.cajaFiguras{
+    /* background-color: #0a60ec;*/
+    padding: 10px;
+    width: 1200px;
+    position: relative;
+    margin: 0 auto; 
+    
+ }
+
+.imagenseparacionFiguras {
+    display: flex;
+    padding-left: 25px;
+    gap: 30px; /* Espacio entre las imágenes en una fila */
+}
+
+.imagendimensionFiguras{
+    display: block;
+    width: 260px;
+    height: 210px; 
+}
+
+ 
+.imagendiseñoFiguras {
+    overflow: hidden;
+    border-radius: 12px; /* Ajusta el radio para bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+}
+
+.imagendiseñoFiguras:hover {
+    transform: scale(2.0); /* Aumenta ligeramente el tamaño de la imagen al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+    position: relative; /* Necesario para z-index */
+    z-index: 1; /* Asegura que el elemento esté sobre otros elementos */
+}
+
+.info-overlay {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: #fff; /* Texto blanco */
+    padding: 10px;
+    text-align: center;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease-in-out; /* Transición suave para la opacidad */
+}
+
+.imagendiseñoFiguras:hover .info-overlay {
+    opacity: 1; /* Mostrar el overlay al pasar el ratón */
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+
+}
+
